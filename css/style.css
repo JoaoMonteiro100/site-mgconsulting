@@ -4364,14 +4364,13 @@ a.overlay.small i {
 	transition: all 0.2s linear;
 }
 .logo img:hover {
-	opacity: 0.85;
-	filter: alpha(opacity=85);
+
 }
 .main-container .logo img {
 	margin: 0 auto;
 }
 .header-small .logo img {
-	max-height: 40px;
+	max-height: 60px;
 	margin: 2px 0 -4px 0;
 }
 .text-center .logo img {
