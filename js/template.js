@@ -614,19 +614,19 @@
 				},
 				messages: {
 					name: {
-						required: "Please specify your name",
-						minlength: "Your name must be longer than 2 characters"
+						required: "Por favor, especifique o seu nome",
+						minlength: "O nome tem de ter mais de 2 caracteres"
 					},
 					email: {
-						required: "We need your email address to contact you",
-						email: "Please enter a valid email address e.g. name@domain.com"
+						required: "Precisamos do seu endereço de correio eletrónico para o/a contactar",
+						email: "Por favor, introduza um e-mail válido (ex: nome@dominio.pt)"
 					},
 					subject: {
-						required: "Please enter a subject"
+						required: "Por favor, introduza um assunto"
 					},
 					message: {
-						required: "Please enter a message",
-						minlength: "Your message must be longer than 10 characters"
+						required: "Por favor, introduza uma mensagem",
+						minlength: "A sua mensagem tem de ter mais de 10 caracteres"
 					}					
 				},
 				errorElement: "span",
@@ -691,17 +691,17 @@
 				},
 				messages: {
 					name2: {
-						required: "Please specify your name",
-						minlength: "Your name must be longer than 2 characters"
+						required: "Por favor, especifique o seu nome",
+						minlength: "O nome tem de ter mais de 2 caracteres"
 					},
 					email2: {
-						required: "We need your email address to contact you",
-						email: "Please enter a valid email address e.g. name@domain.com"
+						required: "Precisamos do seu endereço de correio eletrónico para o/a contactar",
+						email: "Por favor, introduza um e-mail válido (ex: nome@dominio.pt)"
 					},
 					message2: {
-						required: "Please enter a message",
-						minlength: "Your message must be longer than 10 characters"
-					}
+						required: "Por favor, introduza uma mensagem",
+						minlength: "A sua mensagem tem de ter mais de 10 caracteres"
+					}					
 				},
 				errorElement: "span",
 				highlight: function (element) {
@@ -767,18 +767,19 @@
 				},
 				messages: {
 					name3: {
-						required: "Please specify your name",
-						minlength: "Your name must be longer than 2 characters"
+						required: "Por favor, especifique o seu nome",
+						minlength: "O nome tem de ter mais de 2 caracteres"
 					},
 					email3: {
-						required: "We need your email address to contact you",
-						email: "Please enter a valid email address e.g. name@domain.com"
+						required: "Precisamos do seu endereço de correio eletrónico para o/a contactar",
+						email: "Por favor, introduza um e-mail válido (ex: nome@dominio.pt)"
 					},
 					message3: {
-						required: "Please enter a message",
-						minlength: "Your message must be longer than 10 characters"
+						required: "Por favor, introduza uma mensagem",
+						minlength: "A sua mensagem tem de ter mais de 10 caracteres"
 					}					
 				},
+
 				errorElement: "span",
 				highlight: function (element) {
 					$(element).parent().removeClass("has-success").addClass("has-error");
