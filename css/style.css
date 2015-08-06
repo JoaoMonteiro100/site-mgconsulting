@@ -6027,3 +6027,10 @@ ul.tweets li span {
 .ie8 .overlay-container:hover .overlay { 
 	display: block;
 }
+
+.anchor{
+  display: block;
+  height: 45px; /*same height as header*/
+  margin-top: -45px; /*same height as header*/
+  visibility: hidden;
+}
