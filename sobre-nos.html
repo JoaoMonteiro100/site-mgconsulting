@@ -7,7 +7,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>MG Consulting</title>
-		<meta name="description" content="MG Consulting - a contribuir para um mundo empresarial mais equilibrado.">
+		<meta name="description" content="MG Consulting">
 		<meta name="author" content="João Monteiro">
 
 		<!-- Mobile Meta -->
@@ -67,9 +67,7 @@
 
 			<!-- header start classes:
 				fixed: fixed navigation mode (sticky menu) e.g. <header class="header fixed clearfix">
-				dark: dark header version e.g. <header class="header dark clearfix">
-				transparent: transparent header version e.g. <header class="header transparent clearfix">
-				to tweak the transparency of header add inline style e.g.<header class="header transparent clearfix" style="background-color:rgba(255,255,255,0.8)">
+				 dark: dark header version e.g. <header class="header dark clearfix">
 			================ -->
 			<header class="header fixed header-small clearfix">
 				<div class="container">
@@ -120,8 +118,8 @@
 														<li>
 															<a href="index.html" onmouseover="this.style.color='#009798';" onmouseout="this.style.color='#666';">Início</a>
 														</li>
-														<li class="dropdown">
-															<a href="sobre-nos.html" class="dropdown-toggle" data-toggle="dropdown" onmouseover="this.style.color='#009798';" onmouseout="this.style.color='#666';">Sobre Nós</a>
+														<li class="dropdown active">
+															<a href="#" class="dropdown-toggle" data-toggle="dropdown" >Sobre Nós</a>
 															<ul class="dropdown-menu">
 																<li><a href="#">Historial da empresa</a></li>
 																<li class="dropdown">
@@ -171,8 +169,8 @@
 														</ul>
 													</li>
 													<!-- mega-menu end -->
-													<li class="active">
-														<a href="#" onmouseover="this.style.color='#008686';" onmouseout="this.style.color='#009798';">Contactos</a>
+													<li>
+														<a href="contactos.html" onmouseover="this.style.color='#009798';" onmouseout="this.style.color='#666';">Contactos</a>
 													</li>
 												</ul>
 											</div>
@@ -196,94 +194,75 @@
 			<!-- banner start -->
 			<!-- ================ -->
 			<div class="banner">
-				<!-- google maps start -->
-				<div id="map-canvas"></div>
-				<!-- google maps end -->
+				<div class="fixed-image section dark-translucent-bg" style="background-image:url('images/spiral.jpg');">
+					<div class="container">
+					<div class="space-top"></div>
+					<h1>Sobre Nós</h1>
+					<div class="separator-2"></div>
+					<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae sit excepturi, <br class="hidden-xs hidden-sm"> hic officiis illo dolore sunt assumenda saepe id commodi sint praesentium <br class="hidden-xs hidden-sm"> natus laborum quas cumque facilis, suscipit aliquam dolorum.</p>
+					</div>
+				</div>
 			</div>
 			<!-- banner end -->
 
-			<a href="https://www.google.com/maps/place/R.+do+Bocage+124,+8000-151+Faro,+Portugal/@37.0153434,-7.9292296,17z/data=!3m1!4b1!4m2!3m1!1s0xd0552c376487d21:0x5b066451d30cd100" target="_blank" class="btn btn-gray" style="position:absolute; top: 455px; right:50px;">Ver no Google Maps<i class="icon icon-location pl-3"></i></a>
-
-			<!-- main-container start -->
+			<!-- section start -->
 			<!-- ================ -->
-			<section class="main-container">
-
+			<div class="section clearfix object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="200">
 				<div class="container">
+					<br>
 					<div class="row">
-
-						<!-- main start -->
-						<!-- ================ -->
-						<div class="main col-md-8">
-
-							<!-- page-title start -->
-							<!-- ================ -->
-							<h1 class="page-title">Contacte-nos</h1>
-							<!-- page-title end -->
-							<p>Se necessitar de algum esclarecimento ou estiver interessado nos nossos serviços, entre em contacto connosco.</p>
-							<div class="alert alert-success hidden" id="MessageSent">
-								Recebemos a sua mensagem e entraremos em contacto consigo o mais brevemente possível.
-							</div>
-							<div class="alert alert-danger hidden" id="MessageNotSent">
-								Surgiu um erro! Por favor, atualize a página e tente de novo.
-							</div>
-							<div class="contact-form">
-								<form id="contact-form" role="form">
-									<div class="form-group has-feedback">
-										<label for="name">Nome*</label>
-										<input type="text" class="form-control" id="name" name="name" placeholder="">
-										<i class="fa fa-user form-control-feedback"></i>
-									</div>
-									<div class="form-group has-feedback">
-										<label for="email">E-mail*</label>
-										<input type="email" class="form-control" id="email" name="email" placeholder="">
-										<i class="fa fa-envelope form-control-feedback"></i>
-									</div>
-									<div class="form-group has-feedback">
-										<label for="subject">Assunto*</label>
-										<input type="text" class="form-control" id="subject" name="subject" placeholder="">
-										<i class="fa fa-navicon form-control-feedback"></i>
-									</div>
-									<div class="form-group has-feedback">
-										<label for="message">Mensagem*</label>
-										<textarea class="form-control" rows="6" id="message" name="message" placeholder=""></textarea>
-										<i class="fa fa-pencil form-control-feedback"></i>
-									</div>
-									<input type="submit" value="Enviar" class="submit-button btn btn-default">
-								</form>
-							</div>
+						<div class="col-md-6">
+							<img src="images/city.jpg" alt="">
+							<div class="space hidden-md hidden-lg"></div>
 						</div>
-						<!-- main end -->
-
-						<!-- sidebar start -->
-						<aside class="col-md-4">
-							<div class="sidebar">
-								<div class="side vertical-divider-left">
-									<h3 class="title">Maria Grigutsch - Consulting / Formação Lda.</h3>
-									<ul class="list">
-										<li><strong></strong></li>
-										<li><i class="fa fa-home pr-10"></i>Rua do Bocage, n.º 124<br><span class="pl-20">8000-233 Faro, Portugal</span></li>
-										<li><i class="fa fa-phone pr-10"></i><abbr title="Telefone">Tlf:</abbr> (+351) 289 822 096</li>
-										<li><i class="fa fa-mobile pr-10 pl-5"></i><abbr title="Telemóvel">Tlm:</abbr> (+351) 917 824 683</li>
-										<li><i class="fa fa-envelope pr-10"></i><a href="mailto:geral@mgconsulting.com.pt">geral@mgconsulting.com.pt</a></li>
-									</ul>
-									<ul class="social-links colored circle large">
-										<li class="facebook"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
-										<li class="twitter"><a target="_blank" href="http://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
-										<li class="googleplus"><a target="_blank" href="http://plus.google.com"><i class="fa fa-google-plus"></i></a></li>
-									</ul>
-								</div>
-							</div>
-						</aside>
-						<!-- sidebar end -->
-
+						<div class="col-md-6">
+							<h2>Historial da empresa</h2>
+							<p class="space-top">A empresa Maria Grigutsch Consulting/Formação Lda. foi criada no início de 2015, com o propósito de ser uma resposta às necessidades empresariais que foram auscultadas através de um levantamento exaustivo feito ao longo de vários anos, pela sua diretora executiva, com várias realidades, nas quais a MG Consulting fez parte da sua solução. Neste sentido, pretendemos proporcionar aos nossos clientes os instrumentos e as competências necessárias para ultrapassarem estas necessidades e, consequentemente orientar e liderar com sucesso as suas empresas.</p>
+							<button class="btn btn-default">Saber mais</button>
+						</div>
 					</div>
 				</div>
-			</section>
-			<!-- main-container end -->
+			</div>
+			<!-- section end -->
+			<hr>
+			<!-- section start -->
+			<!-- ================ -->
+			<div class="section clearfix object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="200">
+				<div class="container">
+					<br>
+					<div class="row">
+						<div class="col-md-6" style="text-align: right;">
+							<h2>Princípios</h2>
+							<p class="space-top">Omg texto</p>
+							<button class="btn btn-default">Saber mais</button>
+						</div>
+						<div class="col-md-6">
+							<img src="images/bridge.jpg" alt="">
+							<div class="space hidden-md hidden-lg"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- section end -->
+			<hr>
+			<!-- section start -->
+			<!-- ================ -->
+			<div class="section clearfix object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="200" id="organograma">
+				<div class="container">
+					<br>
+					<h2 class="page-title text-center">Organograma</h2>
+					<img src="images/graph.png" alt="Organograma">
+				</div>
+			</div>
+			<!-- section end -->
 
 			<!-- footer start (Add "light" class to #footer in order to enable light footer) -->
 			<!-- ================ -->
 			<footer id="footer" class="dark">
+
+				<!-- .footer start -->
+				<!-- ================ -->
+				<footer id="footer" class="dark">
 
 				<!-- .footer start -->
 				<!-- ================ -->
@@ -370,10 +349,10 @@
 							<div class="collapse navbar-collapse" id="navbar-collapse-2">
 								<ul class="nav navbar-nav">
 									<li><a href="index.html">Início</a></li>
-									<li><a href="sobre-nos.html">Sobre Nós</a></li>
+									<li><a href="#">Sobre Nós</a></li>
 									<li><a href="#">Mapa do Site</a></li>
 									<li><a href="relatorio-unico.html">Relatório Único</a></li>
-									<li><a href="#">Contactos</a></li>
+									<li><a href="contactos.html">Contactos</a></li>
 								</ul>
 							</div>
 						</nav>
@@ -384,18 +363,23 @@
 				<!-- .subfooter end -->
 
 			</footer>
-			
+			<!-- footer end -->
+
 		</div>
 		<!-- page-wrapper end -->
 
 		<!-- JavaScript files placed at the end of the document so the pages load faster
 		================================================== -->
 		<!-- Jquery and Bootstap core js files -->
-		<script type="text/javascript" src="plugins/jquery.js"></script>
+		<script type="text/javascript" src="plugins/jquery.min.js"></script>
 		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 
 		<!-- Modernizr javascript -->
 		<script type="text/javascript" src="plugins/modernizr.js"></script>
+
+		<!-- jQuery REVOLUTION Slider  -->
+		<script type="text/javascript" src="plugins/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+		<script type="text/javascript" src="plugins/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
 
 		<!-- Isotope javascript -->
 		<script type="text/javascript" src="plugins/isotope/isotope.pkgd.min.js"></script>
@@ -409,9 +393,6 @@
 		<!-- Appear javascript -->
 		<script type="text/javascript" src="plugins/jquery.appear.js"></script>
 
-		<!-- Sharrre javascript -->
-		<script type="text/javascript" src="plugins/jquery.sharrre.js"></script>
-
 		<!-- Count To javascript -->
 		<script type="text/javascript" src="plugins/jquery.countTo.js"></script>
 
@@ -420,10 +401,6 @@
 
 		<!-- Contact form -->
 		<script src="plugins/jquery.validate.js"></script>
-
-		<!-- Google Maps javascript -->
-		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
-		<script type="text/javascript" src="js/google.map.config.js"></script>
 
 		<!-- Initialization of Plugins -->
 		<script type="text/javascript" src="js/template.js"></script>
