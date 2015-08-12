@@ -16,15 +16,15 @@ if($Recipient) {
 	$Category = $_POST['category'];
 
 	$Email_body = "";
-	$Email_body .= "From: " . $Name . "\n" .
-				   "Email: " . $Email . "\n" .
-				   "Subject: " . $Subject . "\n" .
-				   "Message: " . $Message . "\n" .
-				   "Category: " . $Category . "\n";
+	$Email_body .= "De: " . $Name . "\n" .
+				   "E-mail: " . $Email . "\n" .
+				   "Assunto: " . $Subject . "\n" .
+				   "Categoria: " . $Category . "\n" .
+				   "Mensagem: " . $Message . "\n";
 
 	$Email_headers = "";
-	$Email_headers .= 'From: ' . $Name . ' <' . $Email . '>' . "\r\n".
-					  "Reply-To: " .  $Email . "\r\n";
+	$Email_headers .= 'De: ' . $Name . ' <' . $Email . '>' . "\r\n".
+					  "Responder para: " .  $Email . "\r\n";
 
 	$sent = mail($Recipient, $Subject, $Email_body, $Email_headers);
 

@@ -578,7 +578,7 @@
 							if (data.sent == "yes") {
 								$("#MessageSent").removeClass("hidden");
 								$("#MessageNotSent").addClass("hidden");
-								$(".submit-button").removeClass("btn-default").addClass("btn-success").prop('value', 'Message Sent');
+								$(".submit-button").removeClass("btn-default").addClass("btn-success").prop('value', 'Mensagem enviada');
 								$("#contact-form .form-control").each(function() { 
 									$(this).prop('value', '').parent().removeClass("has-success").removeClass("has-error");
 								});
@@ -615,7 +615,7 @@
 				messages: {
 					name: {
 						required: "Por favor, especifique o seu nome",
-						minlength: "O nome tem de ter mais de 2 caracteres"
+						minlength: "O nome tem de ter pelo menos 2 caracteres"
 					},
 					email: {
 						required: "Precisamos do seu endereço de correio eletrónico para o/a contactar",
@@ -626,7 +626,7 @@
 					},
 					message: {
 						required: "Por favor, introduza uma mensagem",
-						minlength: "A sua mensagem tem de ter mais de 10 caracteres"
+						minlength: "A sua mensagem tem de ter pelo menos 10 caracteres"
 					}					
 				},
 				errorElement: "span",
@@ -658,7 +658,7 @@
 							if (data.sent == "yes") {
 								$("#MessageSent2").removeClass("hidden");
 								$("#MessageNotSent2").addClass("hidden");
-								$(".submit-button").removeClass("btn-default").addClass("btn-success").prop('value', 'Message Sent');
+								$(".submit-button").removeClass("btn-default").addClass("btn-success").prop('value', 'Mensagem enviada');
 								$("#footer-form .form-control").each(function() { 
 									$(this).prop('value', '').parent().removeClass("has-success").removeClass("has-error");
 								});
@@ -692,7 +692,7 @@
 				messages: {
 					name2: {
 						required: "Por favor, especifique o seu nome",
-						minlength: "O nome tem de ter mais de 2 caracteres"
+						minlength: "O nome tem de ter pelo menos 2 caracteres"
 					},
 					email2: {
 						required: "Precisamos do seu endereço de correio eletrónico para o/a contactar",
@@ -700,7 +700,7 @@
 					},
 					message2: {
 						required: "Por favor, introduza uma mensagem",
-						minlength: "A sua mensagem tem de ter mais de 10 caracteres"
+						minlength: "A sua mensagem tem de ter pelo menos 10 caracteres"
 					}					
 				},
 				errorElement: "span",
@@ -725,7 +725,7 @@
 						data: {
 							"name": $("#sidebar-form #name3").val(),
 							"email": $("#sidebar-form #email3").val(),
-							"subject": "Message from FAQ page",
+							"subject": "Pergunta feita na pagina de Perguntas Frequentes",
 							"category": $("#sidebar-form #category").val(),
 							"message": $("#sidebar-form #message3").val()
 						},
@@ -734,7 +734,7 @@
 							if (data.sent == "yes") {
 								$("#MessageSent3").removeClass("hidden");
 								$("#MessageNotSent3").addClass("hidden");
-								$(".submit-button").removeClass("btn-default").addClass("btn-success").prop('value', 'Message Sent');
+								$(".submit-button").removeClass("btn-default").addClass("btn-success").prop('value', 'Mensagem enviada');
 								$("#sidebar-form .form-control").each(function() { 
 									$(this).prop('value', '').parent().removeClass("has-success").removeClass("has-error");
 								});
@@ -768,7 +768,7 @@
 				messages: {
 					name3: {
 						required: "Por favor, especifique o seu nome",
-						minlength: "O nome tem de ter mais de 2 caracteres"
+						minlength: "O nome tem de ter pelo menos 2 caracteres"
 					},
 					email3: {
 						required: "Precisamos do seu endereço de correio eletrónico para o/a contactar",
@@ -776,7 +776,7 @@
 					},
 					message3: {
 						required: "Por favor, introduza uma mensagem",
-						minlength: "A sua mensagem tem de ter mais de 10 caracteres"
+						minlength: "A sua mensagem tem de ter pelo menos 10 caracteres"
 					}					
 				},
 
