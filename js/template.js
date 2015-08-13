@@ -571,6 +571,7 @@
 							"name": $("#contact-form #name").val(),
 							"email": $("#contact-form #email").val(),
 							"subject": $("#contact-form #subject").val(),
+							"category": "Formulário de contacto geral",
 							"message": $("#contact-form #message").val()
 						},
 						dataType: "json",
@@ -578,7 +579,7 @@
 							if (data.sent == "yes") {
 								$("#MessageSent").removeClass("hidden");
 								$("#MessageNotSent").addClass("hidden");
-								$(".submit-button").removeClass("btn-default").addClass("btn-success").prop('value', 'Mensagem enviada');
+								$("#submit").removeClass("btn-default").addClass("btn-success").addClass("active").prop('value', 'Mensagem enviada');
 								$("#contact-form .form-control").each(function() { 
 									$(this).prop('value', '').parent().removeClass("has-success").removeClass("has-error");
 								});
@@ -641,25 +642,26 @@
 			});
 		};
 
-		if($("#footer-form").length>0) {
-			$("#footer-form").validate({
+		if($("#client-form").length>0) {
+			$("#client-form").validate({
 				submitHandler: function(form) {
 					$.ajax({
 						type: "POST",
 						url: "php/email-sender.php",
 						data: {
-							"name": $("#footer-form #name2").val(),
-							"email": $("#footer-form #email2").val(),
-							"subject": "Message from contact form",
-							"message": $("#footer-form #message2").val()
+							"name": $("#client-form #name2").val(),
+							"email": $("#client-form #email2").val(),
+							"subject": "Contacto por parte de cliente",
+							"category": "Formulário de contacto",
+							"message": $("#client-form #message2").val()
 						},
 						dataType: "json",
 						success: function (data) {
 							if (data.sent == "yes") {
 								$("#MessageSent2").removeClass("hidden");
 								$("#MessageNotSent2").addClass("hidden");
-								$(".submit-button").removeClass("btn-default").addClass("btn-success").prop('value', 'Mensagem enviada');
-								$("#footer-form .form-control").each(function() { 
+								$("#submit2").removeClass("btn-default").addClass("btn-success").addClass("active").prop('value', 'Mensagem enviada');
+								$("#client-form .form-control").each(function() { 
 									$(this).prop('value', '').parent().removeClass("has-success").removeClass("has-error");
 								});
 							} else {
@@ -691,8 +693,8 @@
 				},
 				messages: {
 					name2: {
-						required: "Por favor, especifique o seu nome",
-						minlength: "O nome tem de ter pelo menos 2 caracteres"
+						required: "Por favor, especifique o nome da empresa",
+						minlength: "O nome da empresa tem de ter pelo menos 2 caracteres"
 					},
 					email2: {
 						required: "Precisamos do seu endereço de correio eletrónico para o/a contactar",
@@ -734,7 +736,7 @@
 							if (data.sent == "yes") {
 								$("#MessageSent3").removeClass("hidden");
 								$("#MessageNotSent3").addClass("hidden");
-								$(".submit-button").removeClass("btn-default").addClass("btn-success").prop('value', 'Mensagem enviada');
+								$(".submit-button").removeClass("btn-default").addClass("btn-success").addClass("active").prop('value', 'Mensagem enviada');
 								$("#sidebar-form .form-control").each(function() { 
 									$(this).prop('value', '').parent().removeClass("has-success").removeClass("has-error");
 								});
@@ -789,6 +791,156 @@
 				}
 			});
 
+		};
+
+		if($("#trainer-form").length>0) {
+			$("#trainer-form").validate({
+				submitHandler: function(form) {
+					$.ajax({
+						type: "POST",
+						url: "php/email-sender.php",
+						data: {
+							"name": $("#trainer-form #name4").val(),
+							"email": $("#trainer-form #email4").val(),
+							"subject": "Contacto por parte de formador",
+							"category": "Formulário de contacto",
+							"message": $("#trainer-form #message4").val()
+						},
+						dataType: "json",
+						success: function (data) {
+							if (data.sent == "yes") {
+								$("#MessageSent4").removeClass("hidden");
+								$("#MessageNotSent4").addClass("hidden");
+								$("#submit4").removeClass("btn-default").addClass("btn-success").addClass("active").prop('value', 'Mensagem enviada');
+								$("#trainer-form .form-control").each(function() { 
+									$(this).prop('value', '').parent().removeClass("has-success").removeClass("has-error");
+								});
+							} else {
+								$("#MessageNotSent4").removeClass("hidden");
+								$("#MessageSent4").addClass("hidden");
+							}
+						}
+					});
+				},				
+				// debug: true,
+				errorPlacement: function(error, element) {
+					error.insertAfter( element );
+				},
+				onkeyup: false,
+				onclick: false,
+				rules: {
+					name4: {
+						required: true,
+						minlength: 2
+					},
+					email4: {
+						required: true,
+						email: true
+					},
+					message4: {
+						required: true,
+						minlength: 10
+					}
+				},
+				messages: {
+					name4: {
+						required: "Por favor, especifique o seu nome",
+						minlength: "O nome tem de ter pelo menos 2 caracteres"
+					},
+					email4: {
+						required: "Precisamos do seu endereço de correio eletrónico para o/a contactar",
+						email: "Por favor, introduza um e-mail válido (ex: nome@dominio.pt)"
+					},
+					message4: {
+						required: "Por favor, introduza uma mensagem",
+						minlength: "A sua mensagem tem de ter pelo menos 10 caracteres"
+					}					
+				},
+				errorElement: "span",
+				highlight: function (element) {
+					$(element).parent().removeClass("has-success").addClass("has-error");
+					$(element).siblings("label").addClass("hide"); 
+				},
+				success: function (element) {
+					$(element).parent().removeClass("has-error").addClass("has-success");
+					$(element).siblings("label").removeClass("hide"); 
+				}
+			});
+		};
+
+		if($("#partner-form").length>0) {
+			$("#partner-form").validate({
+				submitHandler: function(form) {
+					$.ajax({
+						type: "POST",
+						url: "php/email-sender.php",
+						data: {
+							"name": $("#partner-form #name5").val(),
+							"email": $("#partner-form #email5").val(),
+							"subject": "Contacto por parte de parceiro",
+							"category": "Formulário de contacto",
+							"message": $("#partner-form #message5").val()
+						},
+						dataType: "json",
+						success: function (data) {
+							if (data.sent == "yes") {
+								$("#MessageSent5").removeClass("hidden");
+								$("#MessageNotSent5").addClass("hidden");
+								$("#submit5").removeClass("btn-default").addClass("btn-success").addClass("active").prop('value', 'Mensagem enviada');
+								$("#partner-form .form-control").each(function() { 
+									$(this).prop('value', '').parent().removeClass("has-success").removeClass("has-error");
+								});
+							} else {
+								$("#MessageNotSent5").removeClass("hidden");
+								$("#MessageSent5").addClass("hidden");
+							}
+						}
+					});
+				},				
+				// debug: true,
+				errorPlacement: function(error, element) {
+					error.insertAfter( element );
+				},
+				onkeyup: false,
+				onclick: false,
+				rules: {
+					name5: {
+						required: true,
+						minlength: 2
+					},
+					email5: {
+						required: true,
+						email: true
+					},
+					message5: {
+						required: true,
+						minlength: 10
+					}
+				},
+				messages: {
+					name5: {
+						required: "Por favor, especifique o nome da empresa",
+						minlength: "O nome da empresa tem de ter pelo menos 2 caracteres"
+					},
+					email5: {
+						required: "Precisamos do seu endereço de correio eletrónico para o/a contactar",
+						email: "Por favor, introduza um e-mail válido (ex: nome@dominio.pt)"
+					},
+					message5: {
+						required: "Por favor, introduza uma mensagem",
+						minlength: "A sua mensagem tem de ter pelo menos 10 caracteres"
+					}					
+				},
+				errorElement: "span",
+				highlight: function (element) {
+					$(element).parent().removeClass("has-success").addClass("has-error");
+					$(element).siblings("label").addClass("hide"); 
+				},
+				success: function (element) {
+					$(element).parent().removeClass("has-error").addClass("has-success");
+					$(element).siblings("label").removeClass("hide"); 
+				}
+			});
 		};
 
 		// Affix plugin
