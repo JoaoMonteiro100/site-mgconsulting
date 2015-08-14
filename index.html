@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- Marcação de microdados adicionada pelo Assistente de Marcação para Dados Estruturados Google. -->
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
 <!--[if !IE]><!-->
@@ -6,7 +7,7 @@
 <!--<![endif]-->
 <head>
 	<meta charset="utf-8">
-	<title>MG Consulting</title>
+	<title>MG Consulting - Formação e Consultoria / Coaching</title>
 	<meta name="keywords" content="Consultoria, Formação, Consulting, Grigutsch, MG, MGConsulting">
 	<meta name="description" content="Maria Grigutsch Consulting/Formação Lda.">
 	<meta name="author" content="joaommonteiro.pt">
@@ -64,7 +65,7 @@
 
 			<!-- page wrapper start -->
 			<!-- ================ -->
-			<div class="page-wrapper">
+			<div itemscope itemtype="http://schema.org/LocalBusiness" class="page-wrapper">
 
 			<!-- header start classes:
 				fixed: fixed navigation mode (sticky menu) e.g. <header class="header fixed clearfix">
@@ -83,7 +84,7 @@
 
 									<!-- logo -->
 									<div class="logo">
-										<a href="#"><img id="logo" src="images/logo_gray.png" alt="MG Consulting"></a>
+										<a href="#"><img itemprop="image" id="logo" src="images/logo_gray.png" alt="MG Consulting"></a>
 									</div>
 
 								</div>
@@ -119,7 +120,7 @@
 												<div class="collapse navbar-collapse" id="navbar-collapse-1">
 													<ul class="nav navbar-nav navbar-right">
 														<li class="active">
-															<a href="#" onmouseover="this.style.color='#008686';" onmouseout="this.style.color='#009798';">Início</a>
+															<a itemprop="url" href="#" onmouseover="this.style.color='#008686';" onmouseout="this.style.color='#009798';">Início</a>
 														</li>
 														<li class="dropdown">
 															<a href="sobre-nos.html" class="dropdown-toggle" data-toggle="dropdown" onmouseover="this.style.color='#009798';" onmouseout="this.style.color='#333';">Sobre Nós</a>
@@ -542,9 +543,12 @@
 									<h2 style="line-height:1.8em;"><br></h2>
 									<ul class="list">
 										<li><strong></strong></li>
-										<li><i class="fa fa-home pr-10"></i>Rua do Bocage n.º 124, Faro</li>
-										<li><i class="fa fa-phone pr-10"></i> 289 822 096</li>
-										<li><i class="fa fa-envelope pr-10"></i>geral@mgconsulting.com.pt</li>
+										<li itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><i class="fa fa-home pr-10"></i><span itemprop="streetAddress">Rua do Bocage n.º 124</span>, <span itemprop="addressLocality">Faro</span>
+											<meta itemprop="addressCountry" content="Portugal">
+											<meta itemprop="postalCode" content="8000-233">
+											<meta itemprop="addressRegion" content="Faro"></li>
+										<li itemprop="telephone"><i class="fa fa-phone pr-10"></i> 289 822 096</li>
+										<li itemprop="email"><i class="fa fa-envelope pr-10"></i>geral@mgconsulting.com.pt</li>
 									</ul>
 									<br><a href="contactos.html" class="link"><span>Mais contactos</span></a>
 								</div>
@@ -608,7 +612,7 @@
 			</footer>
 	<!-- footer end -->
 
-</div>
+<meta itemprop="name" content="Maria Grigutsch - Consulting / Formação Lda."></div>
 <!-- page-wrapper end -->
 
 		<!-- JavaScript files placed at the end of the document so the pages load faster
