@@ -6034,3 +6034,65 @@ ul.tweets li span {
   margin-top: -45px; /*same height as header*/
   visibility: hidden;
 }
+
+#landing-pic {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -999;
+	width: 100vw;
+	height: 100vh;
+	user-drag: none;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+.text-box-landing {
+	position: absolute;
+	background-color: rgba(255, 255, 255, 0);
+	height: 42vh;
+	width: 42vw;
+	top: 29vh;
+	left: 29vw;
+	border-radius: 15px;
+	padding: 20px;
+	padding-top: 5vh;
+}
+
+.over-text-landing {
+	position: relative;
+	top: 50px;
+	background: transparent;
+}
+
+#logo-landing {
+	max-height: 20vh;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	user-drag: none;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+.landing-text {
+	position: relative;
+	display: inline-block;
+	left: -17px;
+	top: 5vh;
+	width: calc(42vw - 40px);
+	text-align: center;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.btn-landing {
+	margin: 10px;
+}
