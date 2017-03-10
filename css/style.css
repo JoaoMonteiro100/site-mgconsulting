@@ -6096,3 +6096,9 @@ ul.tweets li span {
 .btn-landing {
 	margin: 10px;
 }
+
+.landing-top {
+	background: url("../images/black_pc_big.jpg") no-repeat center center;
+	background-size: cover;
+	overflow: hidden;
+}
